@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mim</title>
+
+    <link rel="stylesheet" href="b_style_sobre.css">
+</head>
+
+<body>
+
+    <header id="header">
+
+        <div id="logo">
+            <h1>Sobre mim</h1>
+        </div>
+
+        <nav id="menu">
+            <a href="javascript:void(0);" onclick=goToHome()>Home</a>
+        </nav>
+
+    </header>
+
+    <div id="content">
+
+            <!-- abertura postagem -->
+
+        <div class="post">
+            <h2>Quem sou eu?</h2>
+            <span class="data-post" >atualizado em agosto/2025</span>
+            <div class="data-column">
+                <p class="column">
+                Vida profissional<br><br> No ano de 2012, após concluir a graduação em Ciências Jurídicas e Sociais pela Faculdade Ritter dos Reis, em Porto Alegre/RS, e aprovação no Exame da Ordem dos Advogados, atuei como Advogado até o ano de 2016 quando então, após aprovação em concurso, ingressei na Policia Militar do Estado de Santa Catarina... 
+                    <span id="extra-text"> Fui então policial militar até o ano de 2022 quando, juntamente com a minha esposa, imigramos para a Europa. Inicialmente moramos na Itália, durante o processo de reconhecimento da Cidadania Italiana da minha companheira, e já no final do ano de 2022 nos mudamos para a Alemanha aonde trabalhamos por quase 3 anos em uma Sorveteria Italiana na cidade de Erlangen. Em junho do ano de 2025 retornamos então para a Itália e estamos procurando a inserção no mercado de trabalho.</span>
+                    <a class="link" id="toggle-link">Leia mais</a>
+                </p>
+                <div>
+                    <img class="img-post" src="images/foto5.jpg" title="Caminhando em Tegernsee" alt="img1">
+                    <br>
+                    <img class="img-post" src="images/foto3.jpg" title="Neve em Santiago" alt="img2">
+                </div>
+                <p class="column">
+                Vida pessoal<br><br> Sou natural de Porto Alegre/RS, nascido no ano de 1989, sempre fui uma pessoa com gosto para esportes e jogos, inclusive os digitais! O contato desde a infância com computadores sempre manteve em mim o interesse por tecnologia e a internet... 
+                    <span id="extra-text2">Em 2025, após o incentivo de pessoas próximas, dei início a um sonho antigo que seria estudar com maior profundidade o extenso mundo da Programação. Estou cursando, pela  <a class="link" href="https://www.uninter.com" target="_blank">Uninter</a>, o curso de Analise e Desenvolvimento de Sistemas.</span>
+                    <a class="link" id="toggle-link2">Leia mais</a>
+                </p>
+            </div>                
+        </div>
+        <!-- JavaScript para controlar o comportamento dos links que escondem o texto-->
+        <script>
+            const toggleLink = document.getElementById('toggle-link');
+            const extraText = document.getElementById('extra-text');
+            const toggleLink2 = document.getElementById('toggle-link2');
+            const extraText2 = document.getElementById('extra-text2');
+
+            toggleLink.addEventListener('click', () => {
+            if (extraText.style.display === 'none' || extraText.style.display === '') {
+            extraText.style.display = 'inline';
+            toggleLink.textContent = 'Leia menos';
+            } else {
+            extraText.style.display = 'none';
+            toggleLink.textContent = 'Leia mais';
+            }
+             });
+
+            toggleLink2.addEventListener('click', () => {
+            if (extraText2.style.display === 'none' || extraText2.style.display === '') {
+            extraText2.style.display = 'inline';
+            toggleLink2.textContent = 'Leia menos';
+            } else {
+            extraText2.style.display = 'none';
+            toggleLink2.textContent = 'Leia mais';
+            }
+             });
+        </script>
+
+            <!--fechamento postagem -->
+    <footer id="footer">
+            Todos os direitos reservados - Marcelo Medeiros Benitez
+    </footer>
+
+<script>
+    function goToHome () { 
+    window.location.href = "https://mmbenitez89.github.io/portfolio_benitez/"
+};
+</script>
+</body>
+
+</html>

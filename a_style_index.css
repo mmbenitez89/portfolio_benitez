@@ -1,0 +1,168 @@
+/*
+****** LIMPAR FORMATAÇÃO ******
+*/
+*{
+    margin:0;/*MARGIN É O ESPAÇAMENTO EXTERNO DO CONTEINER DO OBJETO*/
+    padding:0;/*PADDING É O ESPAÇAMENTO INTERNO DO CONTEINER DO OBJETO*/
+}
+
+/*
+****** FORMATAÇÕES GENÉRICAS ******
+*/
+
+body{
+    font-size: 16px;
+    font-family: 'Goudy Bookletter 1911', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #CCCCCC;
+}
+
+h1{
+    color: #CCCCCC;
+    font-size: 40px;
+}
+
+h2{
+    color: #CCCCCC
+}
+
+h3{
+    color: #565656;
+    background-color: #CCCCCC;
+    padding: 5px;
+    text-align: center;
+}
+
+h4{
+    color: #CCCCCC;
+    padding: 0px;
+}
+
+p{
+    color:#CCCCCC;
+}
+
+/*
+****** HEADER ******
+*/
+
+#header{
+    background-color: #252525;
+    padding: 15px;
+    text-align: center;
+}
+
+#logo, #menu{
+    padding: 10px;
+}
+
+#header a:link, #header a:visited{
+    color: blue;
+    padding: 8px 12px; /*SE SÃO LANÇADOS APENAS 2 VALORES, ELES VÃO REFERIR: TOP/BOTTOM(8) E UP/DOWN(12)*/ 
+}
+
+#header a:hover{
+    color: #252525;
+    background-color: #CCCCCC;
+    text-decoration: none; /*O NONE IRÁ REMOVER AS DECORAÇÕES DEFAULT DO TEXTO*/
+}
+
+/*
+****** CONTENT ******
+*/
+
+#content{
+    width: 920px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+
+#posts{
+    width: 660px;
+    float: right;
+}
+
+.post{
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #252525;
+    text-align: justify;
+}
+
+.data-post{
+    font-size: 13px;
+    color: #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.img-post{
+    width: 85px;
+    float: left;
+    margin: 0 20px;
+    border: 5px solid;
+    border-color: white;
+}
+
+/*
+****** LEFT SIDE ******
+*/
+
+#left-side{
+    width: 240px;
+    float: left;
+}
+
+#left-side button:hover{
+    color:blue;
+    cursor:pointer;
+}
+
+.content-left{
+    background-color: #252525;
+    padding: 3px;
+    margin-bottom: 20px;
+}
+
+
+
+.post-left{
+    font-size: 13px;
+    background-color: #252525;
+    padding: 10px;
+}
+
+button{
+    float:right;
+}
+
+/*
+****** FORMATAÇÃO LINKS ******
+*/
+
+a{
+    text-decoration: none;
+}
+
+a:link, a:visited{
+    color: #0066CC
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/*
+****** FOOTER ******
+*/
+
+#footer{
+    clear: both;
+    text-align: center;
+    padding: 15px;
+    background-color: #252525;
+    color: white;
+    font-size: small;
+}
