@@ -1,4 +1,3 @@
-Projeto não finalizado, principais acabamentos a serem realizados:
-- botão de 'imprimir' na página do CV
-- ajustar os 'required' dos inputs na página do formulário 
-- definir opção de inserir/omitir campos conforme necessidade do usuário, na página do formulário
+Projeto de portfólio criado para a cadeira de Fundamentos de Programação WEB do curso de Análise e Desenvolvimento de Sistemas.
+
+Os links da página 'portfólio' podem ser melhorados, principalmente o segundo não foi bem desenvolvido.
